@@ -47,14 +47,13 @@ dailyChange = []
 getPriceData(priceData, prices, market_cap)
 fillInfo(nameData, names)
 fillInfo(changeData, dailyChange)
-print(prices)
 
 def getData():
     data =[]
     length = len(prices)
     for i in range(length):
         data.append([names[i], prices[i], market_cap[i], dailyChange[i]])
-        send = json.dumps(data)
+    send = json.dumps(data)
     return send
 
 
